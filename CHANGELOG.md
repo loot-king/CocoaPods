@@ -8,6 +8,22 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
 
 ##### Enhancements
 
+* Check the podfile sources and plugin sources when printing warnings without explicitly using the master source.  
+  [gonghonglou](https://github.com/gonghonglou)
+  [#10764](https://github.com/CocoaPods/CocoaPods/pull/10764)
+
+* Use relative paths in copy dsyms script.  
+  [Mickey Knox](https://github.com/knox)
+  [#10583](https://github.com/CocoaPods/CocoaPods/pull/10583)
+
+* Use `OpenURI.open_uri` instead.  
+  [Dimitris Koutsogiorgas](https://github.com/dnkoutso)
+  [#10597](https://github.com/CocoaPods/CocoaPods/issues/10597)
+
+* Set minimum supported Ruby version to 2.6.  
+  [Igor Makarov](https://github.com/igor-makarov)
+  [#10412](https://github.com/CocoaPods/CocoaPods/pull/10412)
+
 * Improve compatibility with ActiveSupport 6  
   [Jun Jiang](https://github.com/jasl)
   [#10364](https://github.com/CocoaPods/CocoaPods/pull/10364)
@@ -36,11 +52,24 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
   [cltnschlosser](https://github.com/cltnschlosser)
   [#9916](https://github.com/CocoaPods/CocoaPods/pull/9916)
 
+* Add possibility to skip modulemap generation
+  [till0xff](https://github.com/till0xff)
+
 * Add a `--version` option to `pod spec cat` and `pod spec which` for listing the podspec of a specific version  
   [pietbrauer](https://github.com/pietbrauer)
   [#10609](https://github.com/CocoaPods/CocoaPods/pull/10609)
 
 ##### Bug Fixes
+
+* Fix lint subspec error when the name of subspec start with the pod name.  
+  [XianpuMeng](https://github.com/XianpuMeng)
+  [Dimitris Koutsogiorgas](https://github.com/dnkoutso)
+  [#9906](https://github.com/CocoaPods/CocoaPods/issues/9906)
+
+* Update `ruby-macho` gem version to support 1.x and 2.x.  
+  [Eric Chamberlain](https://github.com/PeqNP)
+  [Dimitris Koutsogiorgas](https://github.com/dnkoutso)
+  [#10390](https://github.com/CocoaPods/CocoaPods/issues/10390)
 
 * Respect `--configuration` option when analyzing via `pod lib lint --analyze`. 
   [Jenn Magder](https://github.com/jmagman)
